@@ -1,0 +1,22 @@
+visudo
+root  ALL=(ALL)  ALL
+devops ALL=(ALL)  ALL
+
+Note: Try step 5 and 6 without step 4
+
+4. Enable ssh configuration on both machines
+
+vi /etc/ssh/sshd_config
+
+PermitRootLogin yes
+PasswordAuthentication yes
+
+Restart -> systemctl restart sshd  // to reflect configuration changes
+
+5. Exit from root user and switch to devops on both machines
+exit
+su - devops
+passwd:
+
+
+6. Login into machines vice-versa:
