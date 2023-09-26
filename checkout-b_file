@@ -1,0 +1,7 @@
+6. Login into machines vice-versa:
+
+machine-1> ssh devops@ip-private-machine-2
+           passwd:
+
+machine-2> ssh devops@ip-private-machine-1
+           passwd:
